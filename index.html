@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0E0B1D">
+    <meta name="description"
+        content="FormPix — Free online tool to resize and compress passport photo, application photo, and signature image to exact KB and pixel size. No upload needed. Works in browser.">
+    <title>FormPix — Resize & Compress Photo to KB Online Free | SKY GRIT</title>
+
+    <!-- SEO: Open Graph (WhatsApp/Facebook preview) -->
+    <meta property="og:title" content="FormPix — Resize Photo to KB Online Free">
+    <meta property="og:description"
+        content="Compress passport photo, application photo or signature to exact file size in seconds. Free, private, browser-based.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/images/logo.png">
+    <meta property="og:image" content="https://TERI-WEBSITE-URL.com/assets/images/logo.png">
+    <meta property="og:url" content="https://TERI-WEBSITE-URL.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="FormPix — Resize Photo to KB Online Free">
+    <meta name="twitter:description"
+        content="Compress passport photo or signature to exact KB. Free, private, browser-based.">
+
+    <!-- SEO: Keywords (minor but helpful) -->
+    <meta name="keywords"
+        content="resize photo to KB online, compress passport photo, reduce image size KB, application photo resize, signature image compress, photo size reducer free">
+
+    <!-- SEO: Structured Data (Google rich result ke liye) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "FormPix",
+      "description": "Free online tool to resize and compress application photos and signatures to exact KB and pixel dimensions.",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Any",
+      "offers": { "@type": "Offer", "price": "0" },
+      "author": { "@type": "Organization", "name": "SKY GRIT" }
+    }
+    </script>
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%235A3B8C'/><text y='72' x='50' text-anchor='middle' font-size='58' font-family='system-ui'>📷</text></svg>">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/app.js" defer></script>
+</head>
+
+<body>
+    <header class="navbar">
+        <a class="brand" href="#" aria-label="FormPix by SKY GRIT home">
+            <img src="assets/images/logo.png" alt="FormPix" class="brand-logo">
+            <span class="brand-byline">A product by <strong>SKY GRIT</strong></span>
+        </a>
+
+        <nav class="nav-links" aria-label="Main navigation">
+            <a href="#tools">Tools</a>
+            <a href="#how-it-works">How it works</a>
+            <a href="#privacy">Privacy</a>
+        </nav>
+
+        <a href="#upload" class="nav-button">Get started <span>↗</span></a>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-glow"></div>
+
+            <div class="hero-content">
+                <div class="eyebrow">
+                    <span class="status-dot"></span>
+                    SIMPLE IMAGE PREPARATION
+                </div>
+
+                <h1>
+                    Your image.<br>
+                    <span>Form-ready.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Resize and compress your application photos and signatures
+                    without complicated editing software.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#upload" class="primary-button">
+                        Prepare your image <span>→</span>
+                    </a>
+                    <span class="privacy-note">Private. Simple. Free to use.</span>
+                </div>
+
+                <div class="hero-features">
+                    <span>✓ No account required</span>
+                    <span>✓ Browser-based processing</span>
+                    <span>✓ Easy downloads</span>
+                </div>
+            </div>
+
+            <div class="hero-art" aria-hidden="true">
+                <div class="art-orbit orbit-one"></div>
+                <div class="art-orbit orbit-two"></div>
+
+                <div class="art-card art-back">
+                    <div class="art-file-icon">✦</div>
+                    <div class="art-line"></div>
+                    <div class="art-line short"></div>
+                </div>
+
+                <div class="art-card art-front">
+                    <div class="art-photo">
+                        <div class="art-head"></div>
+                        <div class="art-body"></div>
+                    </div>
+                    <div class="art-check">✓</div>
+                    <div class="art-caption">PHOTO READY</div>
+                </div>
+
+                <div class="floating-tag">✨ Perfect fit</div>
+            </div>
+        </section>
+
+        <section class="workspace-section" id="upload">
+            <div class="section-heading">
+                <span class="section-label">START HERE</span>
+                <h2>Let's prepare your image</h2>
+                <p>Choose what you want to prepare. We'll guide you through it.</p>
+            </div>
+
+            <div class="workspace">
+                <div class="upload-content">
+                    <div class="upload-intro">
+                        <div>
+                            <h3 id="upload-title">Upload your image</h3>
+                            <p id="upload-description">
+                                Choose a photograph, signature or any image you need to prepare.
+                            </p>
+                        </div>
+                        <span class="step-label">STEP 01 / 03</span>
+                    </div>
+
+                    <div class="dropzone" id="dropzone">
+                        <input type="file" id="file-input" accept="image/jpeg,image/png,image/webp" hidden>
+
+                        <div class="upload-placeholder" id="upload-placeholder">
+                            <div class="upload-icon">↑</div>
+                            <h4>Drop your image here</h4>
+                            <p>Photo, signature or document image — all in one editor</p>
+                            <button class="choose-button" id="choose-button" type="button">
+                                Browse image
+                            </button>
+                            <span class="file-hint">JPG, PNG or WEBP · Maximum 10 MB</span>
+                        </div>
+
+                        <div class="preview-panel" id="preview-panel" hidden>
+                            <img id="image-preview" alt="Selected image preview">
+                            <div class="preview-info">
+                                <strong id="file-name">Image selected</strong>
+                                <span id="file-details"></span>
+                            </div>
+                            <button id="remove-button" class="remove-button" type="button">
+                                Remove image
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- FORMPIX IMAGE EDITOR -->
+                    <div class="editor-panel" id="editor-panel" hidden>
+
+                        <div class="editor-heading">
+                            <div>
+                                <span class="section-label">STEP 02 / 03</span>
+                                <h3>Edit your image</h3>
+                                <p>Crop, resize and compress your image.</p>
+                            </div>
+                            <button type="button" id="reset-editor" class="secondary-button">
+                                Reset settings
+                            </button>
+                        </div>
+
+                        <div class="editor-layout">
+
+                            <div class="editor-preview-area">
+                                <div class="editor-preview-frame">
+                                    <canvas id="editor-canvas"></canvas>
+                                </div>
+                                <p class="preview-caption">
+                                    Preview of your selected image
+                                </p>
+                            </div>
+
+                            <div class="editor-controls">
+
+                                <div class="control-group">
+                                    <label for="crop-ratio">Crop ratio</label>
+                                    <select id="crop-ratio">
+                                        <option value="original">Original image</option>
+                                        <option value="1:1">Square (1:1)</option>
+                                        <option value="3:4">Portrait (3:4)</option>
+                                        <option value="4:3">Landscape (4:3)</option>
+                                        <option value="2:3">Photo (2:3)</option>
+                                        <option value="9:16">Story / Reel (9:16)</option>
+                                        <option value="16:9">Wide (16:9)</option>
+                                        <option value="custom">Custom</option>
+                                    </select>
+                                    <p class="control-hint">
+                                        Choose the shape you need. Adjust the crop position below.
+                                    </p>
+                                </div>
+
+
+                                <div class="crop-instructions">
+                                    <div>
+                                        <strong>Adjust crop area</strong>
+                                        <p>Drag inside the selection to move it. Use the edges and corners to resize.
+                                        </p>
+                                    </div>
+
+                                    <button type="button" id="reset-crop" class="secondary-button">
+                                        Reset crop
+                                    </button>
+                                </div>
+
+                                <p class="control-hint crop-hint">
+                                    The highlighted area will be included in your final image.
+                                </p>
+
+
+                                <div class="control-group">
+                                    <label>Quick presets</label>
+                                    <div style="display:flex; flex-wrap:wrap; gap:8px;">
+                                        <button type="button" class="preset-btn" data-w="35" data-h="45" data-kb="50"
+                                            data-fmt="image/jpeg" data-ratio="3:4">📷 Passport</button>
+                                        <button type="button" class="preset-btn" data-w="200" data-h="230" data-kb="20"
+                                            data-fmt="image/jpeg" data-ratio="original">🪪 Aadhaar Photo</button>
+                                        <button type="button" class="preset-btn" data-w="300" data-h="300" data-kb="100"
+                                            data-fmt="image/jpeg" data-ratio="1:1">📋 UPSC / SSC</button>
+                                        <button type="button" class="preset-btn" data-w="140" data-h="60" data-kb="30"
+                                            data-fmt="image/jpeg" data-ratio="original">✍️ Signature</button>
+                                        <button type="button" class="preset-btn" data-w="400" data-h="400" data-kb="200"
+                                            data-fmt="image/jpeg" data-ratio="1:1">📱 Profile Photo</button>
+                                    </div>
+                                    <p class="control-hint">Click a preset to auto-fill settings for that form type.</p>
+                                </div>
+
+                                <div class="control-group">
+                                    <label>Output dimensions</label>
+                                    <div class="dimension-row">
+                                        <div>
+                                            <label for="output-width" class="small-label">Width (px)</label>
+                                            <input type="number" id="output-width" min="1" max="8000" value="300">
+                                        </div>
+                                        <span class="dimension-cross">×</span>
+                                        <div>
+                                            <label for="output-height" class="small-label">Height (px)</label>
+                                            <input type="number" id="output-height" min="1" max="8000" value="300">
+                                        </div>
+                                    </div>
+
+                                    <label class="check-control">
+                                        <input type="checkbox" id="lock-ratio" checked>
+                                        <span>Keep aspect ratio</span>
+                                    </label>
+                                </div>
+
+                                <div class="control-group">
+                                    <label for="target-kb">Maximum file size (KB)</label>
+                                    <input type="number" id="target-kb" min="1" max="10240" placeholder="e.g. 50">
+                                    <p class="control-hint">
+                                        Leave empty to use the quality setting below.
+                                    </p>
+                                </div>
+
+                                <div class="control-group">
+                                    <label for="output-format">Output format</label>
+                                    <select id="output-format">
+                                        <option value="image/jpeg">JPG</option>
+                                        <option value="image/png">PNG</option>
+                                        <option value="image/webp">WEBP</option>
+                                    </select>
+                                </div>
+
+                                <div class="control-group">
+                                    <div class="range-heading">
+                                        <label for="quality">Image quality</label>
+                                        <span id="quality-value">85%</span>
+                                    </div>
+                                    <input type="range" id="quality" min="10" max="100" value="85">
+                                </div>
+
+                                <button type="button" id="process-button" class="process-button">
+                                    Process image →
+                                </button>
+
+                                <p id="editor-message" class="editor-message" role="status" aria-live="polite"></p>
+
+                            </div>
+                        </div>
+
+                        <div class="result-panel" id="result-panel" hidden>
+                            <div class="result-heading">
+                                <div>
+                                    <span class="section-label">STEP 03 / 03</span>
+                                    <h3>Your image is ready</h3>
+                                </div>
+                                <span class="result-status">✓ Processed</span>
+                            </div>
+
+                            <div class="result-content">
+                                <img id="result-preview" alt="Processed image preview">
+
+                                <div class="result-details">
+                                    <p><strong>Dimensions:</strong> <span id="result-dimensions">—</span></p>
+                                    <p><strong>File size:</strong> <span id="result-size">—</span></p>
+                                    <p><strong>Format:</strong> <span id="result-format">—</span></p>
+                                    <p id="size-result-note"></p>
+                                </div>
+                            </div>
+
+                            <div style="display:grid; grid-template-columns:1fr auto; gap:10px;">
+                                <button type="button" id="download-button" class="process-button">
+                                    ↓ Download image
+                                </button>
+                                <button type="button" id="copy-button" class="process-button"
+                                    style="background:var(--deep); border:1px solid var(--border); white-space:nowrap;">
+                                    ⧉ Copy
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- END FORMPIX IMAGE EDITOR -->
+
+                    <div class="privacy-banner">
+                        <span class="privacy-icon">◈</span>
+                        <div>
+                            <strong>Your image stays on your device.</strong>
+                            <p>FormPix processes your images in your browser.
+                                Nothing leaves your device. Ever.</p>
+                        </div>
+                    </div>
+
+                    <div class="next-step">
+                        <span>Next: Crop and resize your image</span>
+                        <span class="next-arrow">→</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="how-section" id="how-it-works">
+            <div class="section-heading">
+                <span class="section-label">THREE SIMPLE STEPS</span>
+                <h2>From image to ready</h2>
+                <p>No complicated software. No confusing settings.</p>
+            </div>
+
+            <div class="steps-grid">
+                <article class="step-card">
+                    <div class="step-number">01</div>
+                    <div class="step-symbol">↑</div>
+                    <h3>Upload</h3>
+                    <p>Select your photograph or signature from your device.</p>
+                </article>
+
+                <article class="step-card">
+                    <div class="step-number">02</div>
+                    <div class="step-symbol">⌗</div>
+                    <h3>Adjust</h3>
+                    <p>Choose your required dimensions, format and file size.</p>
+                </article>
+
+                <article class="step-card">
+                    <div class="step-number">03</div>
+                    <div class="step-symbol">↓</div>
+                    <h3>Download</h3>
+                    <p>Check the result and save your prepared image.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="privacy-section" id="privacy">
+            <div class="privacy-card">
+                <div class="privacy-shield">◈</div>
+                <div>
+                    <span class="section-label">PRIVACY FIRST</span>
+                    <h2>Your documents are personal. We respect that.</h2>
+                    <p>
+                        Our design goal is to process images directly on your device.
+                        Your application photo and signature should not need to travel
+                        to a server just to be resized.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-brand">
+            <a class="brand" href="#" aria-label="FormPix by SKY GRIT home">
+                <img src="assets/images/logo.png" alt="FormPix" class="brand-logo">
+                <span class="brand-byline">A product by <strong>SKY GRIT</strong></span>
+            </a>
+        </div>
+
+        <div class="footer-about">
+            <strong>About SKY GRIT</strong>
+            <p>
+                SKY GRIT builds useful digital products designed to make
+                everyday tasks simpler.
+            </p>
+        </div>
+
+        <div class="footer-legal">
+            <a href="privacy.html">Privacy Policy</a>
+            <span>·</span>
+            <a href="terms.html">Terms of Use</a>
+        </div>
+
+        <span class="footer-copyright">
+            © 2026 SKY GRIT. All rights reserved.
+        </span>
+    </footer>
+</body>
+
+</html>
