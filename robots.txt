@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://formpix.skygrit.in/sitemap.xml
